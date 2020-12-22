@@ -1,0 +1,15 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+
+target 'PressureSDK_Example' do
+  pod 'PressureSDK', :path => '../'
+  pod 'HLUIKit', :path => './Lib/HLUIKit/'
+
+  target 'PressureSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
